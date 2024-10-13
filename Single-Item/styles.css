@@ -12,6 +12,12 @@ body {
     overflow-x: hidden;
 }
 
+.description {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -52,18 +58,6 @@ ul {
     /* margin: 0 auto; */
 }
 
-.img-description-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    
-}
-
-.item-img  {
-    margin-left:30%;
-    transform: scale(1.5);
-}
-
 .features ul {
     margin-left: 40px;
     margin-bottom: 20px;
@@ -73,12 +67,16 @@ ul {
     list-style: disc;
 }
 
-.img-description-grid .item-description p {
+.item-description p {
     width: 55%;
 }
 
-.item-information .item-name, .price, .dropdown-container, h4, p {
-   margin-bottom: 20px;
+.item-information .item-name,
+.price,
+.dropdown-container,
+h4,
+p {
+    margin-bottom: 20px;
 }
 
 .dropdown-wrapper {
@@ -124,12 +122,13 @@ ul {
     color: #333;
 }
 
-.btn-add .btn{
+.btn-add .btn {
     padding: 10px 50px;
-    
+
 }
 
-.item-description p, ul {
+.item-description p,
+ul {
     color: gray;
     font-size: 0.9rem;
 }
@@ -156,4 +155,62 @@ ul {
 .btn {
     padding: 10px 45px;
     background: white;
+}
+
+@media only screen and (max-width: 390px) {
+    .navbar {
+        display: none;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-image {
+        margin: 32px 0px;
+        width: 50%;
+        max-width: 600px;
+    }
+
+    .item-information {
+        margin: 64px 0px;
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .price {
+        margin: 16px 0 40px;
+        font-size: 16px;
+    }
+
+
+    /* .btn-add {
+        width: 100vw;
+        
+    } */
+
+    .item-information button {
+        border: 2px solid #000;
+        background-color: #fff;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+        padding: 8px 40px;
+        width: 90%;
+    }
+
+    .item-information a {
+        text-decoration: none;
+        color: black;
+        
+    }
+
 }
