@@ -62,24 +62,74 @@ ul {
     gap: 1.8rem;
     margin-bottom: 40px;
 }
-.men_outwears .container {
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100vw;
-    text-align: center;
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+
+p {
+    font-size: 13px;
+    font-weight: 300;
 }
 
 .item {
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 12px;
 }
 
-.item h4 {
-    margin-top: 90px;
+.item-image {
+    margin: 24px 0 8px;
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+    /* For maintaining aspect ratio */
 }
 
-.men_outwears .container .price {
-    color: gray;
+.item-image img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 13px;
+    color: black;
+}
+
+.price {
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10px 32px 10px;
+    padding: 0;
+    list-style: none;
+}
+
+
+.grid a {
+    display: block;
+    text-decoration: none;
+}
+
+.grid li {
+    flex-basis: 50%;
+    max-width: 50%;
 }
 
 /* Utilities Classes */
@@ -105,27 +155,26 @@ ul {
     background: white;
 }
 
- /* Media Queries */
- @media only screen and (max-width: 768px) {
-    .cart img, p, button{
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        display: none;
+    }
+    .cart img , button{
         display: none;
     }
 }
 
 @media only screen and (min-width: 768px) {
 
-    .men_outwears .container .item{
-        
+    .grid li {
         flex-basis: 33%;
         max-width: 33%;
     }
 
-    /* .shop-list-item {
+    .item {
         margin: 0 48px;
     }
-
-    .title {
-        margin-top: 20%;
-    } */
 
 }
