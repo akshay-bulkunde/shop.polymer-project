@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    color: black;
+    letter-spacing: 5px;
+}
+
+h4 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px 40px 15px;
+}
+
+.header .cart-icon {
+    position: absolute;
+    right: 15px;
+}
+
+/* Navbar */
+.navbar .main-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+/* Hero */
+.hero .container .cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-bottom: 40px;
+}
+.men_outwears .container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    text-align: center;
+}
+
+.item {
+    margin-top: 40px;
+}
+
+.item h4 {
+    margin-top: 90px;
+}
+
+.men_outwears .container .price {
+    color: gray;
+}
+
+/* Utilities Classes */
+
+/* Text */
+.text-lg {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.text-md {
+    font-size: 1.1rem;
+    color: #241d1c;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 45px;
+    background: white;
+}
+
+ 
