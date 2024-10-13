@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Checkout/styles.css">
+</head>
+
+<body>
+    <!-- Heading -->
+    <header class="header">
+        <div class="heading">
+            <a href="../Home/index.html" class="shop">
+                <h1 class="text-lg">SHOP</h1>
+            </a>
+        </div>
+        <div class="cart-icon">
+            <a href="#" class="btn">
+                <i class="fa-solid fa-cart-shopping" style="color: black;"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="checkout-info">
+        <h2>Checkout</h2>
+        <p>Shop is a demo app - form data will not be sent</p>
+    </section>
+
+    <div class="container">
+        <main>
+            <section class="form-section">
+                <form>
+                    <div>
+                        <legend>Account Information</legend>
+                        <input type="email" placeholder="Email" >
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div>
+                        <legend>Shipping Address</legend>
+                        <input type="text" placeholder="Address">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="State/Province">
+                        <select>
+                            <option>United States</option>
+                            
+                        </select>
+                        <input type="text" placeholder="Zip/Postal Code">
+                    </div>
+                    
+                </form>
+            </section>
+            <section class="payment-info">
+                <h3>Payment Method</h3>
+                <input type="text" placeholder="Cardholder Name">
+                <input type="text" placeholder="Card Number">
+                <div class="expiry">
+                    <p>Expiry</p>
+                    <div class="date">
+                        <select>
+                            <option>Jan</option>
+                        </select>
+                        <select>
+                            <option>2024</option>
+                            
+                        </select>
+                        <input type="text" placeholder="CVV" >
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="order">
+                        <p>Men's Tech Shell Full-Zip</p>
+                        <p>$150.60</p>
+                    </div>
+                    <div class="total">
+                       <p>Total:</p>
+                        <p>$150.60</p>
+                    </div>
+
+                </div>
+                <button class="btn" type="submit">PLACE ORDER</button>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
