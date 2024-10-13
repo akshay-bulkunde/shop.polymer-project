@@ -107,4 +107,9 @@ ul {
     background: white;
 }
 
+/* Image */
+img {
+    /* if we put img in certain div then it does't break out of div */
+    max-width: 100%;
+}
  
