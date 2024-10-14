@@ -84,17 +84,17 @@ ul {
 
 }
 
-/* .men-cart button {
+.men-cart button {
     position: absolute;
-    left: 25%;
+    left: 400px;
     
 }
 
 .ladies-cart button {
     position: absolute;
-    left: 75%;
+    right: 400px;
     
-} */
+}
 
 /* Hamburger */
 .hamburger {
@@ -110,7 +110,7 @@ ul {
     margin: 5px 0;
 }
 
-.links {
+/* .links {
     display: none;
     flex-direction: column;
     background-color: #333;
@@ -127,7 +127,7 @@ ul {
 
 .links.show {
     display: flex;
-}
+} */
 
 
 /* Utilities Classes */
@@ -158,6 +158,11 @@ img {
     /* if we put img in certain div then it does't break out of div */
     max-width: 100%;
 }
+
+/* .img {
+    max-width: 50vw;
+    height: 300px;
+} */
 
 /* Media Queries */
 @media only screen and (min-width: 375px) and (max-width: 415px) {
@@ -224,9 +229,23 @@ img {
         object-position: center;
     }
 
-    .men-ladies-tshirts button {
+    /* .men-ladies-tshirts button {
+        display: flex;
+        justify-content: space-around;
         margin-left: 0;
         justify-content: center;
         width: 100%;
+    } */
+
+    .men-cart button {
+        position: absolute;
+        left: 50px;
+        
+    }
+    
+    .ladies-cart button {
+        position: absolute;
+        right: 50px;
+        
     }
 }
