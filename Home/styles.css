@@ -58,8 +58,6 @@ ul {
 .men-ladies-tshirts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* margin: 40px; */
-
 }
 
 .men-ladies-tshirts img {
@@ -79,9 +77,6 @@ ul {
     display: flex;
     justify-content: center;
     padding: 10px;
-    /* align-items: center; */
-    /* margin-left: 47%; */
-
 }
 
 .men-cart button {
@@ -109,25 +104,6 @@ ul {
     background-color: black;
     margin: 5px 0;
 }
-
-/* .links {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-}
-
-.links li {
-    text-align: center;
-    margin: 10px 0;
-}
-
-.links.show {
-    display: flex;
-} */
 
 
 /* Utilities Classes */
@@ -159,10 +135,7 @@ img {
     max-width: 100%;
 }
 
-/* .img {
-    max-width: 50vw;
-    height: 300px;
-} */
+
 
 /* Media Queries */
 @media only screen and (min-width: 375px) and (max-width: 415px) {
@@ -228,14 +201,6 @@ img {
         object-fit: cover;
         object-position: center;
     }
-
-    /* .men-ladies-tshirts button {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 0;
-        justify-content: center;
-        width: 100%;
-    } */
 
     .men-cart button {
         position: absolute;
