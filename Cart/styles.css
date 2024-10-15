@@ -60,6 +60,7 @@ p {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
+    width: 100%;
 }
 
 .cart-item img {
@@ -69,8 +70,14 @@ p {
 
 .item-details {
     display: flex;
+    /* flex-direction: column; */
+    width: 100%;
     gap: 60px;
     text-align: center;
+}
+.product-details {
+    display: flex;
+    gap: 15px;
 }
 
 .item-name {
