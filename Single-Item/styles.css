@@ -15,7 +15,9 @@ body {
 .description {
     width: 100%;
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: 1fr 1fr;
+
 }
 
 a {
@@ -79,6 +81,8 @@ ul {
     width: 55%;
 }
 
+
+
 .item-information .item-name,
 .price,
 .dropdown-container,
@@ -126,7 +130,6 @@ p {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    pointer-events: none;
     color: #333;
 }
 
