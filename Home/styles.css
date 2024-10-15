@@ -46,7 +46,15 @@ ul {
     margin-bottom: 25px;
 }
 
-.hero .container .cart {
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,40 +63,26 @@ ul {
     margin-bottom: 40px;
 }
 
+
 .men-ladies-tshirts {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .men-ladies-tshirts img {
-    width: 100%;
-    height: 330px;
-    
+    width: 800px;
+    height: 300px;
+    place-items: center;
+    object-fit: cover;
+    object-position: center;
 }
 
 .men-ladies-tshirts p {
     display: flex;
     justify-content: center;
-    margin: 20px;
-}
-
-.men-ladies-tshirts button {
-    padding: 10px 45px;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.men-cart button {
-    position: absolute;
-    left: 400px;
-    
-}
-
-.ladies-cart button {
-    position: absolute;
-    right: 400px;
-    
 }
 
 /* Hamburger */
@@ -98,7 +92,6 @@ ul {
 }
 
 .hamburger .bar {
-    display: block;
     width: 25px;
     height: 3px;
     background-color: black;
@@ -124,45 +117,36 @@ ul {
 }
 
 /* Buttons */
+
 .btn {
-    padding: 10px 45px;
-    background: white;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /* Image */
 img {
     /* if we put img in certain div then it does't break out of div */
     max-width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 
 
 /* Media Queries */
 @media only screen and (min-width: 375px) and (max-width: 415px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
 
-    .nav-links li {
-        text-align: center;
-        margin: 10px 0;
-    }
 
     .hamburger {
         position: absolute;
         left: 10px;
         top: 25px;
         display: block;
-    }
-
-    .nav-links.show {
-        display: flex;
     }
 
     body {
@@ -184,33 +168,17 @@ img {
         align-items: flex-start;
     }
 
-
-    .nav-links a {
-        font-size: 18px;
-    }
-
     .men-ladies-tshirts {
         width: 100%;
         display: flex;
     }
 
     .men-ladies-tshirts img {
-
         width: 100%;
         height: 180px;
         object-fit: cover;
         object-position: center;
     }
 
-    .men-cart button {
-        position: absolute;
-        left: 50px;
-        
-    }
-    
-    .ladies-cart button {
-        position: absolute;
-        right: 50px;
-        
-    }
+
 }
