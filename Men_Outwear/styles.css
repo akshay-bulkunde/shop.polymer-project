@@ -29,9 +29,6 @@ h4 {
     font-size: 0.9rem;
 }
 
-ul {
-    list-style: none;
-}
 
 .header {
     display: flex;
@@ -124,11 +121,10 @@ p {
 
 
 .grid a {
-    display: block;
     text-decoration: none;
 }
 
-.grid li {
+.grid div {
     flex-basis: 33%;
     
 }
@@ -165,9 +161,8 @@ p {
     .cart img , button{
         display: none;
     }
-    .grid li {
+    .grid div {
         flex-basis: 50%;
-        max-width: 50%;
     }
 }
 
