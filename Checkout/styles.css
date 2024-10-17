@@ -36,7 +36,6 @@ h1 {
 }
 
 input {
-    outline: none;
     border: none;
     border-bottom: 1px solid gray; 
     margin-top: 30px;
@@ -62,14 +61,13 @@ main {
 }
 
 .form-section, .payment-info {
+    /* shorthand for the flex-grow, flex-shrink, and flex-basis */
     flex: 1;
-
 }
 
 form, .payment-info {
     display: flex;
     flex-direction: column;
-    
 }
 
 input, select {
@@ -92,19 +90,16 @@ button {
     gap: 10px;
 }
 
-.expiry .date {
+.expiry .expiry-date {
     display: flex;
 }
 
-.date select {
+.expiry-date select {
     border: none;
     border-bottom: 1px solid gray; 
     background: none;
-    outline: none; 
-}
-
-.expiry select, .expiry input {
-    flex: 1;
+    font-size: 15px;
+    
 }
 
 .order-summary {
@@ -132,6 +127,19 @@ button {
 @media (max-width: 768px) {
     main {
         flex-direction: column;
+    }
+    button {
+        width: 400px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        margin-left: 0;
+        background-color:#172c50;
+        color: #fff;
+        padding: 20px 0 20px;
+        font-size: medium;
+        font-weight: 700;
+        text-align: center;
     }
 }
 
