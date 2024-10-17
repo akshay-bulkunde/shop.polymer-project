@@ -54,6 +54,8 @@ ul {
     margin-bottom: 50px;
 }
 
+
+
 .item-img {
     margin-top: 120px;
     margin-left: 600px;
@@ -64,6 +66,9 @@ ul {
 
 /* Dropdown */
 .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
     max-width: 300px;
     /* margin: 0 auto; */
 }
@@ -90,48 +95,30 @@ h4,
 p {
     margin-bottom: 20px;
 }
-
-.dropdown-wrapper {
-    position: relative;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
+.dropdown-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.dropdown-wrapper:not(:last-child) {
-    margin-bottom: 15px;
+.item-information { 
+    width: 100%;
 }
 
-.dropdown-wrapper label {
-    font-size: 14px;
-    color: #333;
-}
-
-.custom-select {
-    appearance: none;
+.dropdown-wrapper > select {
+    width: 100%;
+    padding: 16px 24px 16px 86px;
     border: none;
     background: transparent;
-    font-size: 14px;
-    color: #333;
-    cursor: pointer;
-    padding: 5px;
-    margin-right: 20px;
-    width: 60px;
-    text-align: right;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
-.dropdown-wrapper::after {
-    content: "▼";
-    font-size: 10px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #333;
+#size , #quantity {
+    margin-left: 10px;
+    
 }
+
 
 .btn-add .btn {
     padding: 10px 50px;
@@ -169,6 +156,9 @@ ul {
 }
 
 @media only screen and (max-width: 390px) {
+    body {
+        overflow-x: hidden;
+    }
     .navbar {
         display: none;
     }
@@ -191,11 +181,11 @@ ul {
 
     .item-information {
         margin: 64px 0px;
-        width: 50%;
+        width: 70%;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 21px;
         line-height: 28px;
     }
 
@@ -220,6 +210,19 @@ ul {
         text-decoration: none;
         color: black;
 
+    }
+    
+    a .btn {
+        width: 380px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color:#172c50;
+        color: #fff;
+        padding: 20px 0 20px;
+        font-size: medium;
+        font-weight: 700;
+        text-align: center;
     }
 
 }
