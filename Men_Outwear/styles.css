@@ -23,13 +23,6 @@ h1 {
     letter-spacing: 5px;
 }
 
-h4 {
-    color: black;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.9rem;
-}
-
-
 .header {
     display: flex;
     justify-content: center;
@@ -60,11 +53,6 @@ h4 {
     margin-bottom: 40px;
 }
 
-p {
-    font-size: 13px;
-    font-weight: 300;
-}
-
 .item {
     display: flex;
     flex-direction: column;
@@ -74,17 +62,17 @@ p {
 }
 
 .item-image {
-    margin: 24px 0 8px;
-    width: 100%;
+    margin-top: 20px;
+    width: 80%;
     position: relative;
-    padding-top: 100%;
+    padding-top: 80%;
     /* For maintaining aspect ratio */
 }
 
 .item-image img {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
     object-fit: cover;
 }
@@ -92,12 +80,14 @@ p {
 .title {
     font-size: 13px;
     color: black;
+    font-weight: 700;
 }
 
 .price {
-    color: black;
+    color: gray;
     font-size: 13px;
     font-weight: 400;
+    margin-top: 10px;
 }
 
 .grid {
@@ -105,11 +95,8 @@ p {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    margin: 0 10px 32px 10px;
-    padding: 0;
     list-style: none;
 }
-
 
 .grid a {
     text-decoration: none;
@@ -117,7 +104,17 @@ p {
 
 .grid div {
     flex-basis: 33%;
-    
+}
+
+.cart-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+span {
+    color: gray;
 }
 
 /* Utilities Classes */
@@ -149,11 +146,13 @@ p {
     .navbar {
         display: none;
     }
-    .cart img , button{
+
+    .cart img,
+    button {
         display: none;
     }
+
     .grid div {
         flex-basis: 50%;
     }
 }
-
