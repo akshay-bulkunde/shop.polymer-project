@@ -50,7 +50,6 @@ ul {
     width: 100%;
     display: flex;
     flex-direction: column;
-
 }
 
 .cart {
@@ -75,7 +74,6 @@ ul {
 .men-ladies-tshirts img {
     width: 800px;
     height: 300px;
-    /* place-items: center; */
     object-fit: cover;
     object-position: center;
 }
@@ -88,7 +86,6 @@ ul {
 /* Hamburger */
 .hamburger {
     display: none;
-    cursor: pointer;
 }
 
 .hamburger .bar {
@@ -164,14 +161,12 @@ img {
 
     nav {
         flex-direction: column;
-        align-items: flex-start;
     }
 
     .cart img {
         width: 100%;
         height: 180px;
     }
-    
 
     .men-ladies-tshirts {
         width: 100%;
@@ -184,6 +179,4 @@ img {
         object-fit: cover;
         object-position: center;
     }
-
-
 }
