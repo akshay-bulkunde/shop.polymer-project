@@ -154,9 +154,18 @@ p {
         font-weight: 700;
     }
 
-    .checkout-btn {
-        padding: 0.4rem 0.8rem;
+    a .checkout-btn {
+        width: 400px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
         margin-left: 0;
+        background-color:#172c50;
+        color: #fff;
+        padding: 20px 0 20px;
+        font-size: medium;
+        font-weight: 700;
+        text-align: center;
     }
 
     h1.text-lg {
