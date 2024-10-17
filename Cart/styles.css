@@ -70,7 +70,6 @@ p {
 
 .item-details {
     display: flex;
-    /* flex-direction: column; */
     width: 100%;
     gap: 60px;
     text-align: center;
@@ -79,6 +78,15 @@ p {
     display: flex;
     gap: 15px;
 }
+.quantity , .size{
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    margin-top: 10px;
+}
+
 
 .item-name {
     font-size: 1rem;
@@ -145,7 +153,6 @@ p {
         left: 50px;
         bottom: 100px;
         width: 300px;
-        padding: auto;
     }
     
     .total p {
@@ -196,6 +203,9 @@ p {
         position: absolute;
         right:70px;
         top: 165px;
-        
+    }
+
+    .price{
+        margin-bottom: 9px;
     }
 }
